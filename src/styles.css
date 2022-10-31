@@ -1,0 +1,128 @@
+.buttonsHolder {
+  position: relative;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  background-color: rgba(219, 219, 219, 0.973);
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  margin-left: 8%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-right: 2%;
+}
+.title {
+  font-size: 120%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.spanreactionInfo {
+  margin-right: 0.5rem;
+}
+
+.reactionHolder {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodyContent {
+  max-width: 100%;
+  height: auto;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(196, 191, 191);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.userInfo {
+  display: flex;
+  max-height: 100px;
+}
+.imgProfailHolder {
+  max-height: 50px;
+}
+.imgProfailHolder > img {
+  border: 3px solid blue;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.infoProfailHolder {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.userName {
+  font-size: 150%;
+  font-weight: bolder;
+  margin-bottom: 1%;
+  margin-top: 0.2%;
+}
+
+.timeAgo {
+  font-weight: lighter;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.infoProfailHolder {
+  margin-left: 4%;
+}
+
+.option {
+  width: 25px;
+}
+
+.emoji {
+  position: absolute;
+  top: -1.8rem;
+  left: 0.2rem;
+  background-color: rgb(247, 240, 240);
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 0.5rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.emoji > span {
+  margin: 0.1rem;
+}
+
+.discription {
+  margin: 0.2rem;
+  height: 3.2rem;
+  /* overflow: ;
+  border: solid 1px black;*/
+}
