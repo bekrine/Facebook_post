@@ -1,4 +1,4 @@
-import image from "../../icons/image.jpeg";
+import image from "../icons/image.jpeg";
 
 export default function Body() {
   return (
