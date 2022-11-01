@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { usepostInfoContext } from "../context/contextPostInfo";
 import EmojiHolder from "./EmojiHolder";
 
 export default function Buttons() {
   const [show, setShow] = useState(false);
   const [handelTime, setHandelTime] = useState(false);
+  const { setNbrLike, nrbLike } = usepostInfoContext();
 
   useEffect(() => {
     if (handelTime) {
@@ -23,6 +25,7 @@ export default function Buttons() {
     <div className="buttonsHolder">
       {show && <EmojiHolder setHandelTime={setHandelTime} />}
       <div
+        onClick={() => setNbrLike(nrbLike + 1)}
         onMouseLeave={() => setHandelTime(false)}
         onMouseEnter={() => setHandelTime(true)}
         className="button"

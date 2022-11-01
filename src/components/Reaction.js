@@ -1,8 +1,11 @@
+import { usepostInfoContext } from "../context/contextPostInfo";
+
 export default function Reaction() {
+  const { nrbLike } = usepostInfoContext();
   return (
     <div className="reactionHolder">
       <div className="">
-        <span> 100</span>
+        <span> {nrbLike}</span>
       </div>
       <div className="reactionInfo">
         <span className="spanreactionInfo">1.1K Comments</span>
