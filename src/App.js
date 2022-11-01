@@ -1,18 +1,11 @@
 import "./styles.css";
-import Buttons from "./components/Buttons";
-import Reaction from "./components/Reaction";
-import Body from "./components/Body";
-import Header from "./components/Header";
-import Discription from "./components/Discription";
+import Post from "./components/Post";
+import { PostInfoProvider } from "./context/contextPostInfo";
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Discription />
-      <Body />
-      <Reaction />
-      <Buttons />
-    </>
+    <PostInfoProvider>
+      <Post />
+    </PostInfoProvider>
   );
 }
