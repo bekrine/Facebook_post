@@ -13,8 +13,19 @@ export const usepostInfoContext = () => {
 
 export const PostInfoProvider = ({ children }) => {
   const [nrbLike, setNbrLike] = useState(0);
+  const [showComment, setShowComment] = useState(false);
+  const [comments, setComments] = useState(["dima wac"]);
   return (
-    <PostInfoContext.Provider value={{ nrbLike, setNbrLike }}>
+    <PostInfoContext.Provider
+      value={{
+        nrbLike,
+        setNbrLike,
+        showComment,
+        setShowComment,
+        comments,
+        setComments,
+      }}
+    >
       {children}
     </PostInfoContext.Provider>
   );

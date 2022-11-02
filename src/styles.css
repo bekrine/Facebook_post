@@ -1,3 +1,11 @@
+.post {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 .buttonsHolder {
   position: relative;
   border-top: solid gray 1px;
@@ -125,4 +133,28 @@ img {
   height: 3.2rem;
   /* overflow: ;
   border: solid 1px black;*/
+}
+
+.comment {
+  display: flex;
+  margin: 0.5rem;
+  border-bottom: solid 1px black;
+}
+
+.commentProfail {
+  margin-right: 2px;
+}
+.commentProfail > img {
+  border-radius: 0.8rem;
+}
+.comment > input {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 2%;
+}
+.commentInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
